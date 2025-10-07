@@ -1,0 +1,83 @@
+{
+  "navmenu": {
+    "Properties": "Properties",
+    "Blog": "Blog",
+    "Agent": "Agent",
+    "Contact": "Contact",
+    "Pages": "Pages"
+  },
+
+  "hero": {
+    "Buy": "BUY",
+    "Rent": "RENT",
+    "Location": "Location",
+    "Property Type": "Property Type",
+    "Price Range": "Price Range",
+    "Category": "Category"
+  },
+
+  "sectionTitle": {
+    "Featured Listings": "Featured Listings",
+    "Discover All Types": "Discover All Types",
+    "Popular Properties": "Popular Properties",
+    "Popular Cities": "Popular Cities",
+    "Favorite Properties": "Favorite Properties",
+    "Recently Added": "Recently Added",
+    "Our Incredible Agents": "Our Incredible Agents",
+    "Choose Your Plan": "Choose Your Plan",
+    "Latest Blog": "Latest Blog",
+    "People say about us?": "People say about us?",
+    "See All": "See All",
+    "See Categories": "See Categories",
+    "All Cities": "All Cities"
+  },
+
+  "contact": {
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Subject": "Subject",
+    "Email Address": "Email Address",
+    "Details": "Details"
+  },
+
+  "sideNavmenu": {
+    "Dashboard": "Dashboard",
+    "Create Property": "Create Property",
+    "My Properties": "My Properties",
+    "Profile Settings": "Profile Settings",
+    "Favorite Properties": "Favorite Properties",
+    "Chats": "Chats",
+    "Wallet": "Wallet",
+    "Purchase History": "Purchase History",
+    "Support Ticket": "Support Ticket",
+    "Subscription Plan": "Subscription Plan"
+  },
+
+  "footer": {
+    "FAQs": "FAQs",
+    "Contact": "Contact",
+    "Blog": "Blog",
+    "Get Support": "Get Support",
+    "All Pages": "All Pages",
+    "Download App": "Download App"
+  },
+
+  "others": {
+    "Properties Added": "Properties Added",
+    "Approved Properties": "Approved Properties",
+    "Pending Properties": "Pending Properties",
+    "Featured Properties": "Featured Properties",
+    "Disabled Properties": "Disabled Properties",
+    "Rejected Properties": "Rejected Properties",
+    "My Featured Properties": "My Featured Properties"
+  },
+
+  "addProperty": {
+    "Add New Property": "Add New Property",
+    "Details": "Details",
+    "Facilities": "Facilities",
+    "Outdoor": "Outdoor",
+    "Location": "Location",
+    "Images & videos": "Images & videos"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "navmenu": {
+    "Properties": "Propiedades",
+    "Blog": "Blog",
+    "Agent": "Agente",
+    "Contact": "Contacto",
+    "Pages": "Páginas"
+  },
+
+  "hero": {
+    "Buy": "Comprar",
+    "Rent": "Alquilar",
+    "Location": "Ubicación",
+    "Property Type": "Tipo de propiedad",
+    "Price Range": "Rango de precios",
+    "Category": "Categoría"
+  },
+
+  "sectionTitle": {
+    "Featured Listings": "Listados Destacados",
+    "Discover All Types": "Descubre Todos los Tipos",
+    "Popular Properties": "Propiedades Populares",
+    "Popular Cities": "Ciudades Populares",
+    "Favorite Properties": "Propiedades Favoritas",
+    "Recently Added": "Recientemente Agregado",
+    "Our Incredible Agents": "Nuestros Agentes Increíbles",
+    "Choose Your Plan": "Elige Tu Plan",
+    "Latest Blog": "Último Blog",
+    "People say about us?": "¿Qué Dice la Gente sobre Nosotros?",
+    "See All": "Ver Todo",
+    "See Categories": "Ver Categorías",
+    "All Cities": "Todas las Ciudades"
+  },
+
+  "contact": {
+    "First Name": "Nombre",
+    "Last Name": "Apellido",
+    "Subject": "Asunto",
+    "Email Address": "Dirección de Correo Electrónico",
+    "Details": "Detalles"
+  },
+
+  "sideNavmenu": {
+    "Dashboard": "Panel de control",
+    "Create Property": "Crear propiedad",
+    "My Properties": "Mis propiedades",
+    "Profile Settings": "Configuración de perfil",
+    "Favorite Properties": "Propiedades favoritas",
+    "Chats": "Chats",
+    "Wallet": "Cartera",
+    "Purchase History": "Historial de compras",
+    "Support Ticket": "Ticket de soporte",
+    "Subscription Plan": "Plan de suscripción"
+  },
+
+  "footer": {
+    "FAQs": "Preguntas frecuentes",
+    "Contact": "Contacto",
+    "Blog": "Blog",
+    "Get Support": "Obtener soporte",
+    "All Pages": "Todas las páginas",
+    "Download App": "Descargar la aplicación"
+  },
+
+  "others": {
+    "Properties Added": "Propiedades agregadas",
+    "Approved Properties": "Propiedades aprobadas",
+    "Pending Properties": "Propiedades pendientes",
+    "Featured Properties": "Propiedades destacadas",
+    "Disabled Properties": "Propiedades deshabilitadas",
+    "Rejected Properties": "Propiedades rechazadas",
+    "My Featured Properties": "Mis propiedades destacadas"
+  },
+
+  "addProperty": {
+    "Add New Property": "Agregar nueva propiedad",
+    "Details": "Detalles",
+    "Facilities": "Instalaciones",
+    "Outdoor": "Exterior",
+    "Location": "Ubicación",
+    "Images & videos": "Imágenes y videos"
+  }
+}

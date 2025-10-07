@@ -1,0 +1,91 @@
+{
+  "navmenu": {
+    "Properties": "العقارات",
+    "Blog": "المدونة",
+    "Agent": "الوكيل",
+    "Contact": "اتصل بنا",
+    "Pages": "الصفحات"
+  },
+
+  "hero": {
+    "Buy": "شراء",
+    "Rent": "إيجار",
+    "Location": "الموقع",
+    "Property Type": "نوع العقار",
+    "Price Range": "نطاق السعر",
+    "Category": "الفئة"
+  },
+
+  "sectionTitle": {
+    "Featured Listings": "العقارات المميزة",
+    "Discover All Types": "اكتشف جميع الأنواع",
+    "Popular Properties": "العقارات الشهيرة",
+    "Popular Cities": "المدن الشهيرة",
+    "Favorite Properties": "العقارات المفضلة",
+    "Recently Added": "المضافة حديثًا",
+    "Our Incredible Agents": "وكلاؤنا المميزون",
+    "Choose Your Plan": "اختر خطتك",
+    "Latest Blog": "أحدث المقالات",
+    "People say about us?": "ماذا يقول الناس عنا؟",
+    "See All": "عرض الكل",
+    "See Categories": "عرض الفئات",
+    "All Cities": "جميع المدن"
+  },
+
+  "contact": {
+    "First Name": "الاسم الأول",
+    "Last Name": "اسم العائلة",
+    "Subject": "الموضوع",
+    "Email Address": "البريد الإلكتروني",
+    "Details": "التفاصيل"
+  },
+
+  "sideNavmenu": {
+    "Dashboard": "لوحة التحكم",
+    "Create Property": "إنشاء عقار",
+    "My Properties": "عقاراتي",
+    "Profile Settings": "إعدادات الحساب",
+    "Favorite Properties": "المفضلة",
+    "Chats": "المحادثات",
+    "Wallet": "المحفظة",
+    "Purchase History": "سجل المشتريات",
+    "Support Ticket": "تذكرة الدعم",
+    "Subscription Plan": "خطة الاشتراك"
+  },
+
+  "footer": {
+    "FAQs": "الأسئلة الشائعة",
+    "Contact": "اتصل بنا",
+    "Blog": "المدونة",
+    "Get Support": "الحصول على الدعم",
+    "All Pages": "كل الصفحات",
+    "Download App": "تحميل التطبيق"
+  },
+
+  "others": {
+    "Properties Added": "العقارات المضافة",
+    "Approved Properties": "العقارات المعتمدة",
+    "Pending Properties": "العقارات قيد الانتظار",
+    "Featured Properties": "العقارات المميزة",
+    "Disabled Properties": "العقارات المعطلة",
+    "Rejected Properties": "العقارات المرفوضة",
+    "My Featured Properties": "عقاراتي المميزة"
+  },
+
+  "addProperty": {
+    "Add New Property": "إضافة عقار جديد",
+    "Details": "التفاصيل",
+    "Facilities": "المرافق",
+    "Outdoor": "الخارجية",
+    "Location": "الموقع",
+    "Images & videos": "الصور والفيديوهات"
+  }
+  ,
+  "Nav" : {
+    "Terms & Condition" : "الأحكام والشروط",
+    "About Us": "معلومات عنا",
+    "Privacy Policy": "سياسة الخصوصية",
+    "Affiliate Program Privacy" : "برنامج Affiliate"
+  }
+
+}

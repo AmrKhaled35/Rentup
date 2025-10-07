@@ -1,0 +1,83 @@
+{
+  "navmenu": {
+    "Properties": "বাড়িগুলি",
+    "Blog": "ব্লগ",
+    "Agent": "এজেন্ট",
+    "Contact": "যোগাযোগ",
+    "Pages": "পৃষ্ঠাগুলি"
+  },
+
+  "hero": {
+    "Buy": "কিনুন",
+    "Rent": "ভাড়া",
+    "Location": "অবস্থান",
+    "Property Type": "সম্পত্তির প্রকার",
+    "Price Range": "মূল্য পরিসীমা",
+    "Category": "শ্রেণী"
+  },
+
+  "sectionTitle": {
+    "Featured Listings": "বৈশিষ্ট্যযুক্ত তালিকা",
+    "Discover All Types": "সব ধরনের আবিষ্কার করুন",
+    "Popular Properties": "জনপ্রিয় বাড়িগুলি",
+    "Popular Cities": "জনপ্রিয় শহর",
+    "Favorite Properties": "প্রিয় বাড়িগুলি",
+    "Recently Added": "সাম্প্রতিকভাবে যুক্ত করা হয়েছে",
+    "Our Incredible Agents": "আমাদের অসাধারণ এজেন্টরা",
+    "Choose Your Plan": "আপনার পরিকল্পনা বেছে নিন",
+    "Latest Blog": "সর্বশেষ ব্লগ",
+    "People say about us?": "মানুষ আমাদের সম্পর্কে কী বলে?",
+    "See All": "সব দেখুন",
+    "See Categories": "শ্রেণী দেখুন",
+    "All Cities": "সব শহর"
+  },
+
+  "contact": {
+    "First Name": "প্রথম নাম",
+    "Last Name": "শেষ নাম",
+    "Subject": "বিষয়",
+    "Email Address": "ইমেইল ঠিকানা",
+    "Details": "বিস্তারিত"
+  },
+
+  "sideNavmenu": {
+    "Dashboard": "ড্যাশবোর্ড",
+    "Create Property": "সম্পত্তি তৈরি করুন",
+    "My Properties": "আমার সম্পত্তি",
+    "Profile Settings": "প্রোফাইল সেটিংস",
+    "Favorite Properties": "প্রিয় সম্পত্তি",
+    "Chats": "চ্যাট",
+    "Wallet": "ওয়ালেট",
+    "Purchase History": "ক্রয়ের ইতিহাস",
+    "Support Ticket": "সহায়তা টিকিট",
+    "Subscription Plan": "সাবস্ক্রিপশন পরিকল্পনা"
+  },
+
+  "footer": {
+    "FAQs": "প্রশ্নোত্তর",
+    "Contact": "যোগাযোগ",
+    "Blog": "ব্লগ",
+    "Get Support": "সহায়তা পান",
+    "All Pages": "সমস্ত পৃষ্ঠা",
+    "Download App": "অ্যাপ ডাউনলোড করুন"
+  },
+
+  "others": {
+    "Properties Added": "যোগ করা সম্পত্তি",
+    "Approved Properties": "অনুমোদিত সম্পত্তি",
+    "Pending Properties": "বিচারাধীন সম্পত্তি",
+    "Featured Properties": "বৈশিষ্ট্যযুক্ত সম্পত্তি",
+    "Disabled Properties": "অক্ষম সম্পত্তি",
+    "Rejected Properties": "প্রত্যাখ্যাত সম্পত্তি",
+    "My Featured Properties": "আমার বৈশিষ্ট্যযুক্ত সম্পত্তি"
+  },
+
+  "addProperty": {
+    "Add New Property": "নতুন সম্পত্তি যোগ করুন",
+    "Details": "বিস্তারিত",
+    "Facilities": "সুবিধাসমূহ",
+    "Outdoor": "আউটডোর",
+    "Location": "অবস্থান",
+    "Images & videos": "ছবি ও ভিডিও"
+  }
+}
