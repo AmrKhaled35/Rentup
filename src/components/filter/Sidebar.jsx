@@ -39,7 +39,7 @@ const Sidebar = ({
   const [priceTo, setPriceTo] = useState(search.get("maxPrice"));
   const debouncedPriceFrom = useDebounce(priceFrom);
   const debouncedPriceTo = useDebounce(priceTo);
-
+  
   const fetchData = async () => {
     setLoading(true);
     const formData = new FormData();
@@ -72,7 +72,9 @@ const Sidebar = ({
         ? "asc"
         : ""
     );
+    console.log([...formData.entries()]);
     const { fData, aData } = await getFilterData(page, formData);
+    console.log(fData, aData);
     setFeaturedData(fData?.data);
     setSearchResult(aData?.data);
     setFeaturedPaginationInfo(fData?.paginationInfo);
@@ -149,7 +151,7 @@ const Sidebar = ({
         >
           {categories?.map((item) => (
             <option key={item?.value} value={item?.label}>
-              {item?.label} {/* افتراضياً جميع الفئات بالعربي */}
+              {item?.label} 
             </option>
           ))}
         </select>
@@ -170,7 +172,7 @@ const Sidebar = ({
         >
           {cities?.map((item) => (
             <option key={item?.value} value={item?.label}>
-              {item?.label} {/* افتراضياً جميع المدن بالعربي */}
+              {item?.label}
             </option>
           ))}
         </select>

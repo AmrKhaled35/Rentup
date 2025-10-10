@@ -43,8 +43,8 @@ const page = async ({ params: { slug } }) => {
     <Container>
       <FilterHome
         slug={slug}
-        categories={[{ value: 0, label: "جميع الفئات" }, ...categoryOP]}
-        cities={[{ value: 0, label: "جميع المدن" }, ...cityOP]}
+        categories={[{ value: 0, label: "All Category" }, ...categoryOP]}
+        cities={[{ value: 0, label: "All City" }, ...cityOP]}
         adUnitIds={adUnitIds}
       />
     </Container>

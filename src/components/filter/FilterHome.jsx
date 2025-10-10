@@ -18,6 +18,7 @@ export const filterOptions = [
 ];
 
 const FilterHome = ({ slug, cities, categories, adUnitIds }) => {
+  
   const pathname = usePathname();
   const router = useRouter();
   const filterButtonRef = useRef(null);
