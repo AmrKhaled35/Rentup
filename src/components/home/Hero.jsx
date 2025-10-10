@@ -21,10 +21,10 @@ const Hero = async () => {
         width={0}
         height={0}
         sizes="100vw"
-        className="absolute h-full top-[40%] lg:top-0 w-auto left-0" 
+        className="absolute h-full top-[50%]  lg:top-0 w-auto left-0" 
       />
       <Container>
-        <div className="absolute top-0 right-12 text-right"> 
+        <div className="absolute top-0 right-12 text-right "> 
           <span className="px-4 lg:px-6 py-2 lg:py-3 border border-dark rounded-[10px] text-lg font-medium inline-block mt-14">
             {"العقارات"}
           </span>
