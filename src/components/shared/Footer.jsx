@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { getFooter, getSocial } from "@/actions/actions";
 import { getTranslations } from "next-intl/server";
-import Logo from '../../../public/logo/Logo.png'
+import Logo from "../../../public/logo/Logo.png";
+import PalLogo from "../../../public/palcode.jpeg"; 
 
 const properties = [
   {
@@ -20,12 +21,13 @@ const properties = [
     link: "/blogs",
   },
 ];
+
 const translations = {
-  "Terms & Condition" : "الأحكام والشروط",
+  "Terms & Condition": "الأحكام والشروط",
   "About Us": "معلومات عنا",
   "Privacy Policy": "سياسة الخصوصية",
-  "Affiliate Program Privacy" : "برنامج Affiliate"
-}
+  "Affiliate Program Privacy": "برنامج Affiliate",
+};
 
 const Footer = async ({ links }) => {
   const [{ data: socials }, { data: footer }] = await Promise.all([
@@ -34,10 +36,11 @@ const Footer = async ({ links }) => {
   ]);
   const t = await getTranslations("footer");
   const t3 = (text) => translations[text] || text;
+
   return (
     <footer className="bg-[#1c1c1c] text-[#00B140]">
       <Container>
-        <div className="grid grid-cols-10 gap-y-12 lg:gap-6 py-16">
+        <div className="grid grid-cols-10 gap-y-12 lg:gap-6 py-16 border-b border-gray-700">
           <div className="col-span-10 lg:col-span-4 mb-9">
             <Image
               src={Logo}
@@ -52,7 +55,10 @@ const Footer = async ({ links }) => {
               {footer?.address?.split(".")[0]} <br />{" "}
               {footer?.address?.split(".")[1]}
             </p>
-            <Link href={`mailto:${footer?.mail}`} className="font-medium hover:text-[#00B140] text-white">
+            <Link
+              href={`mailto:${footer?.mail}`}
+              className="font-medium hover:text-[#00B140] text-white"
+            >
               {footer?.mail}
             </Link>
 
@@ -74,11 +80,16 @@ const Footer = async ({ links }) => {
           </div>
 
           <div className="col-span-5 lg:col-span-2">
-            <p className="text-[#00B140] text-lg font-medium">{t("الحصول على الدعم")}</p>
+            <p className="text-[#00B140] text-lg font-medium">
+              {t("الحصول على الدعم")}
+            </p>
             <ul className="mt-5 lg:mt-7 space-y-3">
               {properties?.map((item, i) => (
                 <li key={i}>
-                  <Link href={item.link} className="text-white hover:text-[#00B140]">
+                  <Link
+                    href={item.link}
+                    className="text-white hover:text-[#00B140]"
+                  >
                     {t(item.label)}
                   </Link>
                 </li>
@@ -87,11 +98,16 @@ const Footer = async ({ links }) => {
           </div>
 
           <div className="col-span-5 lg:col-span-2">
-            <p className="text-[#00B140] text-lg font-medium">{t("كل الصفحات")}</p>
+            <p className="text-[#00B140] text-lg font-medium">
+              {t("كل الصفحات")}
+            </p>
             <ul className="mt-5 lg:mt-7 space-y-3">
               {links?.map((item) => (
                 <li key={item.id}>
-                  <Link href={`/more/${item?.slug ? item?.slug : "about-us"}`} className="text-white hover:text-[#00B140]">
+                  <Link
+                    href={`/more/${item?.slug ? item?.slug : "about-us"}`}
+                    className="text-white hover:text-[#00B140]"
+                  >
                     {t3(item?.title)}
                   </Link>
                 </li>
@@ -126,6 +142,23 @@ const Footer = async ({ links }) => {
               />
             </Link>
           </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 py-6 text-sm text-white">
+          <span className="text-[18px]">Development by Pal Code</span>
+          <Link
+            href="https://palcode.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-[#00B140]"
+          >
+            <Image
+              src={PalLogo}
+              alt="Pal Code"
+              width={60}
+              height={30}
+              className="object-contain rounded-lg"
+            />
+          </Link>
         </div>
       </Container>
     </footer>

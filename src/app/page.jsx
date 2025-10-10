@@ -65,49 +65,12 @@ const Home = async () => {
       <Hero />
       <FeaturedListings data={featuredListings.data} />
       <DiscoverAllTypes data={categories.data} />
-      <Ad
-        className="mt-16"
-        adUnit={adUnitIds?.homepage_add_1}
-        sizes={[
-          [750, 200],
-          [728, 90],
-          [300, 250],
-          [320, 50],
-        ]}
-        sizeMapping={[
-          {
-            viewportSize: [1024, 768],
-            sizes: [
-              [750, 200],
-              [728, 90],
-            ],
-          },
-          { viewportSize: [768, 0], sizes: [[300, 250]] },
-        ]}
-      />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <Ad/><Ad/><Ad/> 
+      </div>
       <PopularProperties data={popularListings.data} />
       <PopularCities data={popularCities.data} />
       <FavoriteProperties data={favoriteListings.data} />
-      <Ad
-        className="mt-16"
-        adUnit={adUnitIds?.homepage_add_2}
-        sizes={[
-          [750, 200],
-          [728, 90],
-          [300, 250],
-          [320, 50],
-        ]}
-        sizeMapping={[
-          {
-            viewportSize: [1024, 768],
-            sizes: [
-              [750, 200],
-              [728, 90],
-            ],
-          },
-          { viewportSize: [768, 0], sizes: [[300, 250]] },
-        ]}
-      />
       <RecentlyAdded data={recentlyAdded.data} />
       <OurAgent data={agent.data} />
       <OurAdvantage data={OurAdvantage.data} />

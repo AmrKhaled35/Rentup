@@ -17,7 +17,7 @@ const PopularProperties = ({ data }) => {
       <Container>
         <p className="flex justify-between items-center">
           <span className="text-2xl font-medium">
-            {t("Popular Properties")}
+            {t("All Properties")}
           </span>
           <Link
             href="/popular-properties"

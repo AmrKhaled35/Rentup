@@ -1,78 +1,40 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-/* interface AdProps {
-  adUnit: string
-  sizes: [number, number][]
-  sizeMapping?: Array<{ viewportSize: [number, number]; sizes: [number, number][] }>
-  className?: string
-}
-
-declare global {
-  interface Window {
-    googletag: any
+const AdBanner = ({ adImage = null, adLink = "#" }) => {
+  if (adImage) {
+    return (
+      <div className="flex justify-center mt-16">
+        <Link
+          href={adLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <Image
+            src={adImage}
+            alt="Advertisement"
+            width={1200}
+            height={250}
+            className="rounded-xl shadow-md hover:opacity-90 transition-all duration-300 object-cover w-full"
+          />
+        </Link>
+      </div>
+    );
   }
-} */
-
-const Ad = ({
-  adUnit = "/6355419/Travel/Europe/France/Paris",
-  sizes = [
-    [750, 200],
-    [728, 90],
-    [300, 250],
-  ],
-  sizeMapping,
-  /*  = [
-    {
-      viewportSize: [1024, 0],
-      sizes: [
-        [728, 90],
-        [750, 200],
-      ],
-    },
-    { viewportSize: [768, 0], sizes: [[300, 250]] },
-    { viewportSize: [0, 0], sizes: [[320, 50]] },
-  ], */
-  className,
-}) => {
-  const adRef = useRef(null);
-
-  useEffect(() => {
-    const googletag = window.googletag || {};
-    googletag.cmd = googletag.cmd || [];
-
-    googletag.cmd.push(() => {
-      const slot = googletag
-        .defineSlot(adUnit, sizes, adRef.current?.id)
-        ?.addService(googletag.pubads());
-
-      if (sizeMapping && slot) {
-        const mapping = googletag.sizeMapping();
-        sizeMapping.forEach(({ viewportSize, sizes }) => {
-          mapping.addSize(viewportSize, sizes);
-        });
-        slot.defineSizeMapping(mapping.build());
-      }
-
-      googletag.enableServices();
-      googletag.display(adRef.current?.id);
-    });
-
-    return () => {
-      googletag.cmd.push(() => {
-        googletag.destroySlots();
-      });
-    };
-  }, [adUnit, sizes, sizeMapping]);
-
   return (
-    <div
-      ref={adRef}
-      id={`gpt-ad-${adUnit}`}
-      className={`flex justify-center items-center ${className}`}
-    />
+    <div className="flex flex-col items-center justify-center text-center border-2 border-dashed border-green-400 rounded-xl mt-16 p-6 bg-blue-50 hover:bg-blue-100 transition-all duration-300 shadow-sm">
+      <h3 className="text-2xl font-semibold text-green-700 mb-3">
+        احجز مساحتك الإعلانية هنا
+      </h3>
+      <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full flex items-center gap-2 transition-all duration-200">
+        تواصل الآن
+        {/* <span className="text-lg">🖱️</span> */}
+      </button>
+    </div>
   );
 };
 
-export default Ad;
+export default AdBanner;
