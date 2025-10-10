@@ -6,14 +6,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Search } from "lucide-react";
-
 const priceOptions = [
-  { label: "1000 إلى 2000", value: "1000,2000" },
-  { label: "2000 إلى 3000", value: "2000,3000" },
-  { label: "3000 إلى 4000", value: "3000,4000" },
-  { label: "4000 إلى 5000", value: "4000,5000" },
-  { label: "5000 فأكثر", value: "5000,9999999999" },
+  { label: "1000₪ إلى 2000", value: "1000,2000" },
+  { label: "2000₪ إلى 3000", value: "2000,3000" },
+  { label: "3000₪ إلى 4000", value: "3000,4000" },
+  { label: "4000₪ إلى 5000", value: "4000,5000" },
+  { label: "5000₪ فأكثر", value: "5000,9999999999" },
 ];
+
+
 
 const HeroSearch = ({ cities, categories }) => {
   const [city, setCity] = useState("");
