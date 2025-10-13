@@ -16,10 +16,10 @@ const properties = [
     label: "اتصل بنا",
     link: "/contact",
   },
-  {
-    label: "المدونة",
-    link: "/blogs",
-  },
+  // {
+  //   label: "المدونة",
+  //   link: "/blogs",
+  // },
 ];
 
 const translations = {
@@ -27,6 +27,12 @@ const translations = {
   "About Us": "معلومات عنا",
   "Privacy Policy": "سياسة الخصوصية",
   "Affiliate Program Privacy": "برنامج Affiliate",
+  "FAQs": "الأسئلة الشائعة",
+  "Contact": "اتصل بنا",
+  "Blog": "المدونة",
+  "Get Support": "الحصول على الدعم",
+  "All Pages": "كل الصفحات",
+  "Download App": "تحميل التطبيق"
 };
 
 const Footer = async ({ links }) => {
@@ -34,7 +40,7 @@ const Footer = async ({ links }) => {
     getSocial(),
     getFooter(),
   ]);
-  const t = await getTranslations("footer");
+  // const t = await getTranslations("footer");
   const t3 = (text) => translations[text] || text;
 
   return (
@@ -81,7 +87,7 @@ const Footer = async ({ links }) => {
 
           <div className="col-span-5 lg:col-span-2">
             <p className="text-[#00B140] text-lg font-medium">
-              {t("الحصول على الدعم")}
+              {t3("الحصول على الدعم")}
             </p>
             <ul className="mt-5 lg:mt-7 space-y-3">
               {properties?.map((item, i) => (
@@ -90,7 +96,7 @@ const Footer = async ({ links }) => {
                     href={item.link}
                     className="text-white hover:text-[#00B140]"
                   >
-                    {t(item.label)}
+                    {t3(item.label)}
                   </Link>
                 </li>
               ))}
@@ -99,7 +105,7 @@ const Footer = async ({ links }) => {
 
           <div className="col-span-5 lg:col-span-2">
             <p className="text-[#00B140] text-lg font-medium">
-              {t("كل الصفحات")}
+              {t3("كل الصفحات")}
             </p>
             <ul className="mt-5 lg:mt-7 space-y-3">
               {links?.map((item) => (
@@ -117,7 +123,7 @@ const Footer = async ({ links }) => {
 
           <div className="col-span-10 lg:col-span-2">
             <p className="text-[#00B140] text-lg font-medium">
-              {t("تحميل التطبيق")}
+              {t3("تحميل التطبيق")}
             </p>
             <p className="text-sm text-grayA1 mt-5 lg:mt-7">
               أحب هذا الموقع العقاري! المنصة سهلة الاستخدام، ووجدت بسهولة

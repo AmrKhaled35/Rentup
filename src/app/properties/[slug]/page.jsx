@@ -254,7 +254,7 @@ const page = async ({ params: { slug } }) => {
         <div className="border-2 border-[#E4E7E9] rounded-[10px] p-6 order-first lg:order-last h-max lg:sticky top-12 !overflow-hidden">
           <p className="text-lg text-gray55 font-outfit pt-1">السعر</p>
           <p className="mt-5 text-2xl font-bold">
-            <span className="text-golden">$</span> <span>{price}</span>
+            <span className="text-golden">₪</span> <span>{price}</span>
           </p>
           <div className="grid grid-cols-2 gap-5 mt-7 pb-8 border-b-2">
             <MessageButton

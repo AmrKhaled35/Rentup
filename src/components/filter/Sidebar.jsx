@@ -120,7 +120,7 @@ const Sidebar = ({
       <div className="mt-5">
         <p className="font-medium text-sm mb-4">نوع العقار</p>
         <div className="flex gap-3 flex-wrap text-xs">
-          {["buy", "rent"].map((item, i) => (
+          {["rent"].map((item, i) => (
             <Link
               key={item}
               href={`/filter/${item}/${slug[1]}/${slug[2]}`}
@@ -178,7 +178,7 @@ const Sidebar = ({
         </select>
       </div>
       <div className="mt-8 text-sm">
-        <p className="font-medium mb-4">نطاق السعر ($)</p>
+        <p className="font-medium mb-4">نطاق السعر (₪)</p>
         <div className="flex items-center gap-3">
           <div className="flex w-full">
             <input
