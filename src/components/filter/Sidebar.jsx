@@ -39,7 +39,7 @@ const Sidebar = ({
   const [priceTo, setPriceTo] = useState(search.get("maxPrice"));
   const debouncedPriceFrom = useDebounce(priceFrom);
   const debouncedPriceTo = useDebounce(priceTo);
-  
+
   const fetchData = async () => {
     setLoading(true);
     const formData = new FormData();
@@ -98,7 +98,10 @@ const Sidebar = ({
   }, [debouncedPriceFrom, debouncedPriceTo]);
 
   return (
-    <div className="bg-white md:border md:border-[#E6E6EB] rounded-[10px] md:shadow-[0_2px_12px_0px_rgba(0,0,0,0.06)] px-[18px] pb-1 pt-4 lg:pt-6 h-fit lg:sticky top-6 !overflow-hidden" dir="rtl">
+    <div
+      className="bg-white md:border md:border-[#E6E6EB] rounded-[10px] md:shadow-[0_2px_12px_0px_rgba(0,0,0,0.06)] px-[18px] pb-1 pt-4 lg:pt-6 h-fit lg:sticky top-6 !overflow-hidden"
+      dir="rtl"
+    >
       <div className="flex items-center justify-between">
         <Image
           src={"/icon/arrow-down.svg"}
@@ -118,21 +121,12 @@ const Sidebar = ({
       </div>
       <hr className="mt-3 mb-5 -mx-6 lg:hidden" />
       <div className="mt-5">
-        <p className="font-medium text-sm mb-4">نوع العقار</p>
+        {/* <p className="font-medium text-sm mb-4">نوع العقار</p> */}
         <div className="flex gap-3 flex-wrap text-xs">
-          {["rent"].map((item, i) => (
-            <Link
-              key={item}
-              href={`/filter/${item}/${slug[1]}/${slug[2]}`}
-              className={`font-medium px-5 py-2 rounded-full capitalize border ${
-                state === i + 1
-                  ? "bg-green-100 border-green-500 text-green-500"
-                  : "bg-[#F5F5F6] border-[#E6E6EB]"
-              }`}
-            >
-              {item === "buy" ? "شراء" : "إيجار"}
-            </Link>
-          ))}
+          <Link
+            href={`/filter/rent/${slug[1]}/${slug[2]}`}
+            className="font-medium rounded-full capitalize"
+          ></Link>
         </div>
       </div>
       <div className="mt-8 text-sm">
@@ -151,7 +145,7 @@ const Sidebar = ({
         >
           {categories?.map((item) => (
             <option key={item?.value} value={item?.label}>
-              {item?.label} 
+              {item?.label}
             </option>
           ))}
         </select>

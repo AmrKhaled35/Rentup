@@ -29,10 +29,13 @@ const AdBanner = ({ adImage = null, adLink = "#" }) => {
       <h3 className="text-2xl font-semibold text-green-700 mb-3">
         احجز مساحتك الإعلانية هنا
       </h3>
-      <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full flex items-center gap-2 transition-all duration-200">
+      <Link
+        href="/contact"
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full flex items-center gap-2 transition-all duration-200"
+      >
         تواصل الآن
         {/* <span className="text-lg">🖱️</span> */}
-      </button>
+      </Link>
     </div>
   );
 };

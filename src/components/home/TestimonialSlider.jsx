@@ -85,7 +85,7 @@ const TestimonialSlider = ({ testimonialData }) => {
     <div className="relative mt-4">
       <div className="flex items-center justify-between">
         <p className="text-[26px] lg:text-5xl font-semibold">آراء الناس عنا</p>
-        <div className="flex gap-5 lg:gap-8">
+        {/* <div className="flex gap-5 lg:gap-8">
           <Image
             src="/icon/right-arrow-circle.svg"
             alt="prev"
@@ -104,7 +104,7 @@ const TestimonialSlider = ({ testimonialData }) => {
             className="size-8 lg:size-10 cursor-pointer"
             onClick={() => slider?.current?.slickNext()}
           />
-        </div>
+        </div> */}
       </div>
       <Slider ref={slider} {...options} className="mt-8">
         {translatedTestimonials?.map((item) => (

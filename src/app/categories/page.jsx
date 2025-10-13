@@ -12,7 +12,7 @@ const page = async () => {
 
   return (
     <Container>
-      <PageHeader src="/property/all-types.jpg" title="All Property Types" />
+      <PageHeader src="/property/all-types.jpg" title="كل أنواع العقارات" />
       <div className="my-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {categories?.map((item) => (
           <TypeCard

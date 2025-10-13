@@ -18,7 +18,6 @@ export const filterOptions = [
 ];
 
 const FilterHome = ({ slug, cities, categories, adUnitIds }) => {
-  
   const pathname = usePathname();
   const router = useRouter();
   const filterButtonRef = useRef(null);
@@ -184,10 +183,7 @@ const FilterHome = ({ slug, cities, categories, adUnitIds }) => {
             <span className="capitalize">
               {slug[2] == "all-category" ? "جميع العقارات" : slug[2]}
             </span>{" "}
-            {"للـ "}
-            <span className="capitalize">
-              {slug[0] == "buy" ? "شراء" : "إيجار"}
-            </span>{" "}
+            {"للإيجار"}{" "}
             <span className="capitalize">
               {slug[1] == "all-city" ? "" : `في ${slug[1]}`}
             </span>{" "}

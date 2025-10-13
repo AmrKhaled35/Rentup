@@ -26,7 +26,7 @@ const RecentlyAdded = ({ data, paginationInfo }) => {
     <Container>
       <PageHeader
         src="/property/popular-properties.jpg"
-        title="Recent Properties"
+        title="أحدث العقارات"
       />
       <div className="my-12 grid grid-cols-1 xl:grid-cols-2 gap-8">
         {data?.map((item) =>

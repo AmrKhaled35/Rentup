@@ -157,7 +157,12 @@ const Navbar = ({ links, logo, user }) => {
                 className="bg-transparent outline-none w-full text-sm text-black placeholder-gray-400 text-right"
               />
               <button type="submit">
-                <Image src="/icon/search.svg" alt="search" width={20} height={20} />
+                <Image
+                  src="/icon/search.svg"
+                  alt="search"
+                  width={20}
+                  height={20}
+                />
               </button>
             </form>
 
@@ -263,9 +268,11 @@ const Navbar = ({ links, logo, user }) => {
                 <li>
                   <Link
                     href="/signup"
-                    className="flex items-center gap-2 px-6 py-3 bg-[#00B140] text-white rounded-[10px]"
+                    className="flex items-center gap-2 px-6 py-3 bg-[#00B140] text-white rounded-[10px] 
+               border-2 border-[#00B140] transition-all duration-300 ease-in-out 
+               hover:bg-white hover:text-[#00B140]"
                   >
-                    <span>انشاء حساب</span>
+                    <span>إنشاء حساب</span>
                   </Link>
                 </li>
               </div>
