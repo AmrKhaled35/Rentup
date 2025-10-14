@@ -65,8 +65,8 @@ const Home = async () => {
       <Hero />
       <FeaturedListings data={featuredListings.data} />
       <DiscoverAllTypes data={categories.data} />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-      <Ad/><Ad/><Ad/> 
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
+      <Ad/><Ad/><Ad/><Ad/>
       </div>
       <PopularProperties data={popularListings.data} />
       <PopularCities data={popularCities.data} />
